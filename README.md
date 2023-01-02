@@ -11,3 +11,6 @@ Initial Project for RESTFul API with:
 - Cash/EHCash
 - Liquibase
 - Lombok
+
+Currently in production:
+- Angular15 interface for registering, logging in and deleting users (access management)
