@@ -1,0 +1,54 @@
+--liquibase formatted sql
+
+--changeset mwrona:4
+insert into POST (id,title,content,created)values(1,'Test post 1','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(2,'Test post 2','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(3,'Test post 3','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(4,'Test post 4','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(5,'Test post 5','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(6,'Test post 6','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(7,'Test post 7','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(8,'Test post 8','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(9,'Test post 9','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(10,'Test post 10','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(11,'Test post 11','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(12,'Test post 12','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(13,'Test post 13','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(14,'Test post 14','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(15,'Test post 15','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(16,'Test post 16','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(17,'Test post 17','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(18,'Test post 18','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(19,'Test post 19','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(20,'Test post 20','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(21,'Test post 21','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(22,'Test post 22','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(23,'Test post 23','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(24,'Test post 24','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(25,'Test post 25','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(26,'Test post 26','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(27,'Test post 27','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(28,'Test post 28','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(29,'Test post 29','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(30,'Test post 30','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(31,'Test post 31','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(32,'Test post 32','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(33,'Test post 33','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(34,'Test post 34','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(35,'Test post 35','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(36,'Test post 36','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(37,'Test post 37','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(38,'Test post 38','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(39,'Test post 39','Content 1','2022-12-28 15:55:00');
+insert into POST (id,title,content,created)values(40,'Test post 40','Content 1','2022-12-28 15:55:00');
+
+insert into COMMENT (id,post_id,content,created)values(1,1,'Comment 1','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(2,1,'Comment 2','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(3,1,'Comment 3','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(4,2,'Comment 4','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(5,2,'Comment 5','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(6,2,'Comment 6','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(7,2,'Comment 7','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(8,2,'Comment 8','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(9,3,'Comment 9','2022-12-26 12:00:00');
+insert into COMMENT (id,post_id,content,created)values(10,3,'Comment 10','2022-12-26 12:00:00');

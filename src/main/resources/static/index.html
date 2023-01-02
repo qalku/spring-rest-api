@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form-Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+            function sender(){
+                var form = document.getElementById('myForm');
+                var xhr = new XMLHttpRequest();
+                var formData = new FormData(form);
+                //open the request
+                xhr.open('POST', '/add')
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                //send the form data
+                xhr.send(JSON.stringify(Object.fromEntries(formData)));
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == XMLHttpRequest.DONE) {
+                        document.getElementById("return").innerHTML=xhr.responseText;
+                        form.reset();
+                    }
+                }
+                return false;
+            }
+
+            function loguj(){
+                var form = document.getElementById('myFormLogin');
+                var xhr = new XMLHttpRequest();
+                var formData = new FormData(form);
+                //open the request
+                xhr.open('POST', '/login')
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                //send the form data
+                xhr.send(JSON.stringify(Object.fromEntries(formData)));
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == XMLHttpRequest.DONE) {
+                        document.getElementById("return").innerHTML=xhr.responseText;
+                        form.reset();
+                    }
+                }
+                return false;
+            }
+
+        </script>
+</head>
+<body>
+<div>
+    <form id="myForm" name="myForm">
+        Val1: <input type="text" name="val1"><br>
+        Val2: <input type="text" name="val2"><br>
+        <input type="button" value="OK" onClick="sender();">
+    </form>
+</div>
+<hr size="1">
+WYNIK:
+<div id="return"></div>
+<hr>
+<div>
+    LOGOWANIE:
+    <div class="container">
+        <form class="form-signin" method="post" action="/login">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <p>
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+            </p>
+            <p>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+            </p>
+            <p>
+                <label for="token" class="sr-only">Password</label>
+                <input type="text" id="token" name="token" class="form-control" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTcwNDQ4NjA0fQ.BdBG-16pvbHsfdLEV0UOv_xfQ_hTrOpr7QCqk-GgVWk" placeholder="token" required>
+            </p>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
